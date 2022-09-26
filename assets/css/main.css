@@ -1,0 +1,107 @@
+.main{
+    background-color: rgba(104, 179, 232, 0.2);
+    min-width: 360px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.inform__avatar{
+    margin: 20px 0px;
+}
+
+.inform__avatar-img{
+    width: 154px;
+    border-radius: 80px;
+    box-shadow: 0 0 24px #666;
+}
+.inform__name{
+    font-size: 2.6rem;
+}
+
+.inform__work, .inform__location{
+    font-size: 1.3rem;   
+    color: #818b87;
+}
+
+.inform__location i {
+    margin-right: 8px;
+    color: black;
+}
+
+.inform__view{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inform__view-1{
+    margin-left: 60px;
+}
+
+.inform__view-3{
+    margin-right: 60px;
+}
+
+.inform__view-title{
+    margin-top: 12px;
+    color: #818b87;
+    font-size: 1.1rem
+}
+
+.inform__social-icon{
+    color: black;
+    text-decoration: none;
+}
+
+.inform__social-icon:hover,
+.inform__button-to:hover {
+    opacity: 0.8;
+}
+
+.inform__social-icon i{
+    margin: 0 6px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px #ccc;
+}
+
+.inform__social-icon-f{
+    padding: 6px 10px;
+    background-image: linear-gradient(0, rgb(82, 126, 220), rgb(60, 87, 225)); 
+}
+
+.inform__social-icon-t{
+    padding: 6px 7px;
+    background-image: linear-gradient(0, rgb(59, 135, 221), rgb(101, 171, 221)); 
+}
+
+.inform__social-icon-i{
+    padding: 6px 8px;
+    background-image: linear-gradient(to right top, rgb(227, 17, 59), rgba(232, 29, 103, 0.374));
+}
+
+.inform__social-icon-y{
+    padding: 6px 6px;
+    background-image: linear-gradient(0, rgb(221, 229, 238), rgb(143, 149, 155)); 
+}
+
+.inform__social-icon-g{
+    padding: 6px 7px;
+    background-image: linear-gradient(0, rgb(181, 192, 192), rgb(127, 129, 130)); 
+}
+
+.inform__button-to{
+    padding: 6px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.inform__button-send{
+    background-image: linear-gradient(to right, rgb(21, 97, 183), rgb(62, 131, 180));
+    margin-right: 12px;
+}
+
+.inform__button-follow{
+    background-image: linear-gradient(to right, rgb(231, 95, 23), rgba(232, 44, 11, 0.374));
+}

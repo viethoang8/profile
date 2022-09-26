@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+    font-size: 62.5%;
+}
+
+.m-16{
+    margin: 16px 0;
+}
+
+.m-32{
+    margin: 32px 0;
+}
+
+body{
+    color: black;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: url(https://scr.vn/wp-content/uploads/2020/08/H%C3%ACnh-n%E1%BB%81n-background-vector-scaled.jpg) no-repeat center;
+    background-size: cover;
+    animation: backZoomAnimation 20s forwards ;
+}
+
+@keyframes backZoomAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+    
+}
