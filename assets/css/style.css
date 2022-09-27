@@ -47,3 +47,25 @@ body::before{
     }
     
 }
+
+@media (max-width: 759px ) {
+    .main{
+        width: 320px;
+    }
+
+    .inform__button-to{
+        width: 77%;
+        margin-right: 0;
+        padding: 12px 0;
+        font-size: 1.6rem;
+    }
+
+    .inform__button-send{
+        margin-bottom: 12px;
+    }
+
+    .inform__social-icon i{
+        padding: 13px 16px;
+        font-size: 1.5rem;
+    }
+}

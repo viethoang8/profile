@@ -1,4 +1,5 @@
 .main{
+    position: relative;
     background-color: rgba(104, 179, 232, 0.2);
     min-width: 360px;
     text-align: center;
@@ -57,40 +58,8 @@
     opacity: 0.8;
 }
 
-.inform__social-icon i{
-    margin: 0 6px;
-    font-size: 1.3rem;
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px 0px #ccc;
-}
-
-.inform__social-icon-f{
-    padding: 6px 10px;
-    background-image: linear-gradient(0, rgb(82, 126, 220), rgb(60, 87, 225)); 
-}
-
-.inform__social-icon-t{
-    padding: 6px 7px;
-    background-image: linear-gradient(0, rgb(59, 135, 221), rgb(101, 171, 221)); 
-}
-
-.inform__social-icon-i{
-    padding: 6px 8px;
-    background-image: linear-gradient(to right top, rgb(227, 17, 59), rgba(232, 29, 103, 0.374));
-}
-
-.inform__social-icon-y{
-    padding: 6px 6px;
-    background-image: linear-gradient(0, rgb(221, 229, 238), rgb(143, 149, 155)); 
-}
-
-.inform__social-icon-g{
-    padding: 6px 7px;
-    background-image: linear-gradient(0, rgb(181, 192, 192), rgb(127, 129, 130)); 
-}
-
 .inform__button-to{
-    padding: 6px 20px;
+    padding: 10px 32px;
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -98,10 +67,139 @@
 }
 
 .inform__button-send{
-    background-image: linear-gradient(to right, rgb(21, 97, 183), rgb(62, 131, 180));
+    background-image: linear-gradient(to right, rgb(12, 59, 111), rgb(89, 114, 98));
     margin-right: 12px;
 }
 
 .inform__button-follow{
     background-image: linear-gradient(to right, rgb(231, 95, 23), rgba(232, 44, 11, 0.374));
+}
+
+/* Icon Social */
+
+*:focus, *:active{
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.wrapper{
+    display: inline-flex;
+    list-style: none;
+}
+.wrapper .icon{
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: all 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    left: -19px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tik-tok .tooltip {
+    left: -24px;
+    margin: 8px;
+    width: 72px;
+}
+
+.wrapper .youtobe .tooltip {
+    left: -12px;
+}
+
+.wrapper .github .tooltip{
+    left: -7px;
+}
+
+.wrapper .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon__link{
+    color: #000;
+}
+.icon__link:hover{
+    color: #fff;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before{
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .tik-tok:hover,
+.wrapper .tik-tok:hover .tooltip,
+.wrapper .tik-tok:hover .tooltip::before{
+    background-color: #27272a;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before{
+    background-color: #E4405F;
+    color: #ffffff;
+}
+
+.wrapper .youtobe:hover,
+.wrapper .youtobe:hover .tooltip,
+.wrapper .youtobe:hover .tooltip::before{
+    background-color: #CD201F;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before{
+    background-color: #333333;
+    color: #ffffff;
 }
